@@ -10,13 +10,21 @@
 <body>
     <h1>Where can I Riichi Mahjong?</h1>
     <!-- I want the site to have a functional send in form -->
-    <form>
-        <label for="sender-name">Name:</label><br>
-        <input type="text" id="sender-name" name="sender-name" value="Joshua"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-    </form>
-    <!-- You can use a Google Script for Static Websites -->
-    
+    <!-- This Uses Formspree -->
+    <form
+    action="https://formspree.io/f/mqkvaewl"
+    method="POST"
+  >
+    <label>
+      Your email:
+      <input type="email" name="email">
+    </label>
+    <label>
+      Your message:
+      <textarea name="message"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+  </form>
 </body>
 </html>
