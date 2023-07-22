@@ -26,6 +26,12 @@ form{
     background-color: red;
 }
 /* I want to make an animation of a hand slamming down a random tile for the submit button animation */
-button{
+button[type="submit"]{
     background-color: green;
+}
+
+.site-language-settings button{
+    padding: 0;
+    font-size: 10px;
+    width: 50px;
 }
